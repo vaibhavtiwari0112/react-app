@@ -1,12 +1,17 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import Header from "./Layout/Header.jsx";
+import Footer from "./Layout/Footer.jsx";
+import Home from "./pages/Home.jsx";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <>nothing</>;
+  return (
+    <div className="flex flex-col min-h-screen">
+      <Header />
+      <div className="flex-grow bg-gray-50">
+        <Home />
+      </div>
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
